@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 250, 251, 252;
@@ -31,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition-colors text-lg;
+    @apply inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition-colors shadow-sm;
   }
 }
 
@@ -50,4 +54,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+/* Section transition animations */
+.section-transition {
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-out;
 }
