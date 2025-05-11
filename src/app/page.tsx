@@ -15,7 +15,7 @@ export default function Home() {
           <a href="#our-story" className="text-gray-700 hover:text-black font-medium">Our story</a>
           <a href="#what-you-get" className="text-gray-700 hover:text-black font-medium">What you get</a>
           <a href="#quick-install" className="text-gray-700 hover:text-black font-medium">Quick install</a>
-          <a href="#" className="text-gray-700 hover:text-black font-medium">Free version</a>
+          <a href="#free-version" className="text-gray-700 hover:text-black font-medium">Free version</a>
         </nav>
       </header>
 
@@ -501,6 +501,161 @@ export default function Home() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Free Version Section */}
+      <section id="free-version" className="py-24 md:py-32 bg-gradient-to-b from-white to-[#f0f7ff]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-700 shadow-xl">
+            {/* Background pattern */}
+            <div className="absolute inset-0 opacity-10">
+              <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="white" strokeWidth="1"/>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#smallGrid)" />
+              </svg>
+            </div>
+            
+            <div className="relative px-8 py-16 md:px-16 md:py-20 text-white">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    Want to Try It First?
+                  </h2>
+                  <p className="text-xl opacity-90 mb-8">
+                    We've released a <strong>free read-only version</strong> on NPM so you can try the look and feel.
+                  </p>
+                  <p className="text-lg opacity-80 mb-8">
+                    It doesn't support card movement, but it's great for previewing how the board will look in your app.
+                  </p>
+                  
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-5 mb-8">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                        <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                        <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                      </div>
+                      <span className="text-xs opacity-70">Terminal</span>
+                    </div>
+                    <div className="font-mono text-sm bg-black/80 rounded p-3 overflow-x-auto">
+                      npm install react-dnd-kanban-board-lite
+                    </div>
+                  </div>
+                  
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 bg-white text-blue-700 font-medium rounded-full hover:bg-blue-50 transition-colors border border-white">
+                      <span>View on NPM</span>
+                    </a>
+                    <a href="https://www.privjs.com/packages/react-dnd-kanban-board" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 bg-transparent text-white font-medium rounded-full hover:bg-white/10 transition-colors border border-white">
+                      <span>Get Full Version</span>
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="relative">
+                  {/* Preview comparison */}
+                  <div className="flex flex-col gap-6">
+                    <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                      <h3 className="text-xl font-medium mb-3">Free Version</h3>
+                      <div className="space-y-3">
+                        <div className="flex items-center">
+                          <svg width="20" height="20" fill="none" className="mr-2 text-green-400">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-3 3a1 1 0 01-1.414 0l-1-1a1 1 0 011.414-1.414l.293.293 2.293-2.293a1 1 0 011.414 1.414z" fill="currentColor" />
+                          </svg>
+                          <span>Clean, professional design</span>
+                        </div>
+                        <div className="flex items-center">
+                          <svg width="20" height="20" fill="none" className="mr-2 text-green-400">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-3 3a1 1 0 01-1.414 0l-1-1a1 1 0 011.414-1.414l.293.293 2.293-2.293a1 1 0 011.414 1.414z" fill="currentColor" />
+                          </svg>
+                          <span>Responsive layout</span>
+                        </div>
+                        <div className="flex items-center">
+                          <svg width="20" height="20" fill="none" className="mr-2 text-green-400">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-3 3a1 1 0 01-1.414 0l-1-1a1 1 0 011.414-1.414l.293.293 2.293-2.293a1 1 0 011.414 1.414z" fill="currentColor" />
+                          </svg>
+                          <span>Customizable cards</span>
+                        </div>
+                        <div className="flex items-center opacity-50">
+                          <svg width="20" height="20" fill="none" className="mr-2 text-red-400">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" fill="currentColor" />
+                          </svg>
+                          <span className="line-through">No drag & drop</span>
+                        </div>
+                        <div className="flex items-center opacity-50">
+                          <svg width="20" height="20" fill="none" className="mr-2 text-red-400">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" fill="currentColor" />
+                          </svg>
+                          <span className="line-through">No card states</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 relative">
+                      <div className="absolute top-0 right-0 -mt-2 -mr-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                        RECOMMENDED
+                      </div>
+                      <h3 className="text-xl font-medium mb-3">Full Version ($30)</h3>
+                      <div className="space-y-3">
+                        <div className="flex items-center">
+                          <svg width="20" height="20" fill="none" className="mr-2 text-green-400">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-3 3a1 1 0 01-1.414 0l-1-1a1 1 0 011.414-1.414l.293.293 2.293-2.293a1 1 0 011.414 1.414z" fill="currentColor" />
+                          </svg>
+                          <span>Everything in free version</span>
+                        </div>
+                        <div className="flex items-center">
+                          <svg width="20" height="20" fill="none" className="mr-2 text-green-400">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-3 3a1 1 0 01-1.414 0l-1-1a1 1 0 011.414-1.414l.293.293 2.293-2.293a1 1 0 011.414 1.414z" fill="currentColor" />
+                          </svg>
+                          <span><strong>Full drag & drop support</strong></span>
+                        </div>
+                        <div className="flex items-center">
+                          <svg width="20" height="20" fill="none" className="mr-2 text-green-400">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-3 3a1 1 0 01-1.414 0l-1-1a1 1 0 011.414-1.414l.293.293 2.293-2.293a1 1 0 011.414 1.414z" fill="currentColor" />
+                          </svg>
+                          <span>Column management</span>
+                        </div>
+                        <div className="flex items-center">
+                          <svg width="20" height="20" fill="none" className="mr-2 text-green-400">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-3 3a1 1 0 01-1.414 0l-1-1a1 1 0 011.414-1.414l.293.293 2.293-2.293a1 1 0 011.414 1.414z" fill="currentColor" />
+                          </svg>
+                          <span>Card state & storage</span>
+                        </div>
+                        <div className="flex items-center">
+                          <svg width="20" height="20" fill="none" className="mr-2 text-green-400">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-3 3a1 1 0 01-1.414 0l-1-1a1 1 0 011.414-1.414l.293.293 2.293-2.293a1 1 0 011.414 1.414z" fill="currentColor" />
+                          </svg>
+                          <span>Event callbacks & APIs</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-20 text-center">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+              The free version is perfect for evaluating if our design matches your needs. Ready to unlock the full power?
+            </p>
+            <a
+              href="https://www.privjs.com/packages/react-dnd-kanban-board"
+              className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition-colors text-lg shadow-md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="mr-2">Upgrade to Full Version</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0L8.23 1.77L15.17 8.7H0V11.3H15.17L8.23 18.23L10 20L20 10L10 0Z" fill="currentColor" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
