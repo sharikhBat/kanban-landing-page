@@ -14,7 +14,7 @@ export default function Home() {
         <nav className="hidden md:flex space-x-10">
           <a href="#our-story" className="text-gray-700 hover:text-black font-medium">Our story</a>
           <a href="#what-you-get" className="text-gray-700 hover:text-black font-medium">What you get</a>
-          <a href="#" className="text-gray-700 hover:text-black font-medium">Quick install</a>
+          <a href="#quick-install" className="text-gray-700 hover:text-black font-medium">Quick install</a>
           <a href="#" className="text-gray-700 hover:text-black font-medium">Free version</a>
         </nav>
       </header>
@@ -354,6 +354,153 @@ export default function Home() {
                 <path d="M10 0L8.23 1.77L15.17 8.7H0V11.3H15.17L8.23 18.23L10 20L20 10L10 0Z" fill="currentColor" />
               </svg>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Install Section */}
+      <section id="quick-install" className="py-24 md:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Get Started in 5 Minutes
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Setting it up is dead simple. Here's what you need to do:
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              {/* Vertical timeline line */}
+              <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-400 to-purple-500 ml-6 md:ml-0"></div>
+              
+              {/* Step 1 */}
+              <div className="relative mb-16">
+                <div className="flex flex-col md:flex-row items-start">
+                  <div className="flex items-center mb-4 md:mb-0 z-10 md:w-1/2 md:justify-end md:pr-12">
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg text-white font-bold text-xl">
+                      1
+                    </div>
+                    <div className="ml-6 md:hidden">
+                      <h3 className="text-2xl font-semibold text-gray-900">Buy the package</h3>
+                    </div>
+                  </div>
+                  
+                  <div className="pl-12 md:pl-0 md:w-1/2 md:pl-12">
+                    <div className="p-6 bg-white rounded-lg shadow-md border border-gray-50">
+                      <h3 className="hidden md:block text-2xl font-semibold text-gray-900 mb-3">Buy the package</h3>
+                      <p className="text-gray-600 mb-4">
+                        Get the complete package from PrivJS – one payment, lifetime access, no subscriptions or hidden fees.
+                      </p>
+                      <a 
+                        href="https://www.privjs.com/packages/react-dnd-kanban-board" 
+                        className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span className="mr-2">Visit PrivJS store</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3.33334 8.00008H12.6667M12.6667 8.00008L8.00001 3.33341M12.6667 8.00008L8.00001 12.6667" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Step 2 */}
+              <div className="relative mb-16">
+                <div className="flex flex-col md:flex-row items-start">
+                  <div className="md:order-2 flex items-center mb-4 md:mb-0 z-10 md:w-1/2 md:justify-start md:pl-12">
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg text-white font-bold text-xl">
+                      2
+                    </div>
+                    <div className="ml-6 md:hidden">
+                      <h3 className="text-2xl font-semibold text-gray-900">Follow the guide</h3>
+                    </div>
+                  </div>
+                  
+                  <div className="md:order-1 pl-12 md:pl-0 md:w-1/2 md:pr-12 md:text-right">
+                    <div className="p-6 bg-white rounded-lg shadow-md border border-gray-50">
+                      <h3 className="hidden md:block text-2xl font-semibold text-gray-900 mb-3">Follow the guide</h3>
+                      <p className="text-gray-600 mb-4">
+                        Follow the step-by-step implementation guide provided directly on PrivJS after your purchase.
+                      </p>
+                      <div className="bg-gray-100 rounded-md p-3 font-mono text-sm text-gray-700 md:text-right">
+                        npm install @your-org/react-dnd-kanban-board
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Step 3 */}
+              <div className="relative mb-16">
+                <div className="flex flex-col md:flex-row items-start">
+                  <div className="flex items-center mb-4 md:mb-0 z-10 md:w-1/2 md:justify-end md:pr-12">
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg text-white font-bold text-xl">
+                      3
+                    </div>
+                    <div className="ml-6 md:hidden">
+                      <h3 className="text-2xl font-semibold text-gray-900">Customize cards</h3>
+                    </div>
+                  </div>
+                  
+                  <div className="pl-12 md:pl-0 md:w-1/2 md:pl-12">
+                    <div className="p-6 bg-white rounded-lg shadow-md border border-gray-50">
+                      <h3 className="hidden md:block text-2xl font-semibold text-gray-900 mb-3">Customize cards</h3>
+                      <p className="text-gray-600 mb-4">
+                        Style your cards however you want – use your own CSS, tailwind classes, or styled components.
+                      </p>
+                      <div className="bg-gray-100 rounded-md p-3 font-mono text-sm text-gray-700">
+                        {`<KanbanCard>
+  <YourCustomContent />
+</KanbanCard>`}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Step 4 */}
+              <div className="relative">
+                <div className="flex flex-col md:flex-row items-start">
+                  <div className="md:order-2 flex items-center mb-4 md:mb-0 z-10 md:w-1/2 md:justify-start md:pl-12">
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg text-white font-bold text-xl">
+                      4
+                    </div>
+                    <div className="ml-6 md:hidden">
+                      <h3 className="text-2xl font-semibold text-gray-900">Start building</h3>
+                    </div>
+                  </div>
+                  
+                  <div className="md:order-1 pl-12 md:pl-0 md:w-1/2 md:pr-12 md:text-right">
+                    <div className="p-6 bg-white rounded-lg shadow-md border border-gray-50">
+                      <h3 className="hidden md:block text-2xl font-semibold text-gray-900 mb-3">Start building</h3>
+                      <p className="text-gray-600 mb-4">
+                        Focus on building your app's unique features, rather than reinventing the kanban wheel.
+                      </p>
+                      <span className="inline-block text-green-600 font-medium">
+                        That's it. You're done. 🎉
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-24 max-w-xl mx-auto text-center">
+              <div className="bg-blue-50 border border-blue-100 rounded-lg p-6">
+                <h3 className="text-xl font-medium text-gray-900 mb-2">Need help with implementation?</h3>
+                <p className="text-gray-600 mb-4">
+                  We also offer personalized support for integrating the Kanban board into your specific project.
+                </p>
+                <a href="#" className="inline-flex items-center justify-center px-6 py-3 bg-white text-blue-600 font-medium rounded-full border border-blue-200 hover:bg-blue-50 transition-colors">
+                  Contact us for support
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
