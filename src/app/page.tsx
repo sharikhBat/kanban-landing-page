@@ -1,8 +1,10 @@
 import Image from "next/image";
+import SchemaMarkup from "./components/SchemaMarkup";
 
 export default function Home() {
   return (
     <div className="min-h-screen font-sans bg-[#fafbfc]">
+      <SchemaMarkup />
       {/* Navigation */}
       <header className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
         <div className="flex items-center">
