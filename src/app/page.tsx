@@ -13,7 +13,7 @@ export default function Home() {
         </div>
         <nav className="hidden md:flex space-x-10">
           <a href="#our-story" className="text-gray-700 hover:text-black font-medium">Our story</a>
-          <a href="#" className="text-gray-700 hover:text-black font-medium">What you get</a>
+          <a href="#what-you-get" className="text-gray-700 hover:text-black font-medium">What you get</a>
           <a href="#" className="text-gray-700 hover:text-black font-medium">Quick install</a>
           <a href="#" className="text-gray-700 hover:text-black font-medium">Free version</a>
         </nav>
@@ -187,6 +187,173 @@ export default function Home() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What You Get Section */}
+      <section id="what-you-get" className="py-24 md:py-32 bg-gradient-to-b from-[#fafbfc] to-[#f0f4f8]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Here's What's Inside
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Everything you need for a seamless Kanban experience, wrapped in a lightweight, elegant package.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="space-y-8">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Drag & drop support
+                    </h3>
+                    <p className="text-gray-600">
+                      Built using React DnD, our Kanban board offers a smooth, intuitive drag and drop experience that feels natural to users.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Fully customizable cards
+                    </h3>
+                    <p className="text-gray-600">
+                      Render anything you want within each card – text, images, buttons, custom components – you have complete control.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Responsive design
+                    </h3>
+                    <p className="text-gray-600">
+                      Works beautifully on mobile & desktop. The layout automatically adapts to screen size for the perfect user experience.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Minimal dependencies
+                    </h3>
+                    <p className="text-gray-600">
+                      Keep your bundle size small. Our package only includes what's necessary, making it easy to maintain over time.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Lifetime access for just $30
+                    </h3>
+                    <p className="text-gray-600">
+                      No subscriptions or hidden fees. Pay once and use it on as many projects as you want – commercial or personal.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      Actively maintained
+                    </h3>
+                    <p className="text-gray-600">
+                      We use this package in our own projects, so it's regularly updated. Bug reports and feature requests are always welcome.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="order-1 lg:order-2 flex justify-center">
+              <div className="relative w-full max-w-xl bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+                <div className="p-2 md:p-4">
+                  <div className="w-full overflow-hidden rounded-md">
+                    {/* This is where you'd add the GIF - using a placeholder for now */}
+                    <div className="bg-gray-100 w-full aspect-[4/3] relative overflow-hidden">
+                      <div className="absolute inset-0 flex items-center justify-center text-gray-500">
+                        <p className="text-sm">Drag and drop demo GIF goes here</p>
+                      </div>
+                      
+                      {/* Animated elements to simulate a GIF */}
+                      <div className="absolute top-1/4 left-1/4 w-16 h-16 bg-white shadow-md rounded-md animate-pulse"></div>
+                      <div className="absolute top-1/3 right-1/3 w-16 h-16 bg-white shadow-md rounded-md" 
+                        style={{animation: "float 3s infinite ease-in-out"}}></div>
+                      <div className="absolute bottom-1/4 right-1/4 w-16 h-16 bg-white shadow-md rounded-md animate-bounce"></div>
+                      
+                      {/* Column layout sketch */}
+                      <div className="absolute inset-0 flex justify-between p-4 opacity-30">
+                        <div className="w-1/3 bg-blue-100 rounded-md"></div>
+                        <div className="w-1/3 mx-2 bg-orange-100 rounded-md"></div>
+                        <div className="w-1/3 bg-green-100 rounded-md"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex justify-between items-center px-4 py-3 bg-gray-50 border-t border-gray-200">
+                  <div className="text-sm text-gray-500">Seamless drag & drop</div>
+                  <div className="flex space-x-1">
+                    <div className="w-2 h-2 rounded-full bg-gray-300"></div>
+                    <div className="w-2 h-2 rounded-full bg-gray-500"></div>
+                    <div className="w-2 h-2 rounded-full bg-gray-300"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-16 text-center">
+            <a
+              href="https://www.privjs.com/packages/react-dnd-kanban-board"
+              className="btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="mr-2">Get Your Copy for $30</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0L8.23 1.77L15.17 8.7H0V11.3H15.17L8.23 18.23L10 20L20 10L10 0Z" fill="currentColor" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
