@@ -12,10 +12,10 @@ export default function Home() {
           </svg>
         </div>
         <nav className="hidden md:flex space-x-10">
-          <a href="#" className="text-gray-700 hover:text-black font-medium">Recent work</a>
-          <a href="#" className="text-gray-700 hover:text-black font-medium">Pricing</a>
-          <a href="#" className="text-gray-700 hover:text-black font-medium">About</a>
-          <a href="#" className="text-gray-700 hover:text-black font-medium">Contact</a>
+          <a href="#our-story" className="text-gray-700 hover:text-black font-medium">Our story</a>
+          <a href="#" className="text-gray-700 hover:text-black font-medium">What you get</a>
+          <a href="#" className="text-gray-700 hover:text-black font-medium">Quick install</a>
+          <a href="#" className="text-gray-700 hover:text-black font-medium">Free version</a>
         </nav>
       </header>
 
@@ -118,6 +118,74 @@ export default function Home() {
                 <circle cx="450" cy="340" r="12" fill="#4361ee" opacity="0.3" />
                 <rect x="430" y="360" width="40" height="30" rx="4" fill="#4361ee" opacity="0.3" />
               </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Story Section */}
+      <section id="our-story" className="py-24 md:py-32 bg-[#fafbfc]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="flex flex-col gap-8">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+                We Tried to Find a Simple React Kanban Board. We Couldn't.
+              </h2>
+              
+              <div className="space-y-6">
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  While working on a client project, we just needed a <strong>Kanban board with drag-and-drop support</strong>—something simple, clean, customizable.
+                </p>
+                
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  But after hours of searching through NPM, GitHub, and blog posts… nothing fit. Everything was either bloated, unmaintained, or lacked the basic DnD feature.
+                </p>
+                
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  So we built it ourselves.
+                </p>
+                
+                <p className="text-xl text-gray-900 font-medium">
+                  Now, we're sharing it with you.
+                </p>
+              </div>
+              
+              <div className="bg-white p-8 rounded-lg border border-gray-100 shadow-sm mt-4">
+                <p className="mb-6 text-gray-700">
+                  If you're curious how we built it from scratch, <a href="#" className="text-blue-600 hover:underline font-medium">watch this YouTube tutorial</a> (coming soon).
+                </p>
+                
+                <div className="flex items-center mb-6 text-amber-600">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
+                    <path d="M12 6V12L16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <p className="font-medium">But heads up: It takes hours, and managing updates is a pain.</p>
+                </div>
+                
+                <p className="text-xl font-medium text-gray-900 mb-2">
+                  Want to save time?
+                </p>
+                
+                <p className="flex items-center text-gray-700 font-medium mb-6">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2 text-blue-600">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  Just install our package and move on with your project.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-lg">
+                <Image 
+                  src="/images/kanban-our-story.png"
+                  alt="Developer searching for React Kanban solution"
+                  width={500}
+                  height={500}
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
