@@ -320,22 +320,125 @@ export default function Home() {
                 <div className="p-2 md:p-4">
                   <div className="w-full overflow-hidden rounded-md">
                     {/* This is where you'd add the GIF - using a placeholder for now */}
-                    <div className="bg-gray-100 w-full aspect-[4/3] relative overflow-hidden">
-                      <div className="absolute inset-0 flex items-center justify-center text-gray-500">
-                        <p className="text-sm">Drag and drop demo GIF goes here</p>
+                    <div className="bg-gradient-to-br from-gray-50 to-gray-100 w-full aspect-[4/3] relative overflow-hidden rounded-md shadow-inner">
+                      {/* Kanban Board Animation */}
+                      <div className="absolute inset-0 flex px-2 pt-2 pb-1">
+                        {/* Column 1: To Do */}
+                        <div className="flex-1 mx-1 bg-gray-50/80 rounded-md flex flex-col">
+                          <div className="p-2 text-center text-xs font-bold text-blue-600 border-b border-gray-200">TO DO</div>
+                          <div className="flex-1 p-2 space-y-2 overflow-hidden">
+                            {/* Card 1 */}
+                            <div className="bg-white p-2 rounded shadow-sm border border-gray-200 transform transition-transform duration-500 hover:shadow-md cursor-move animate-fadeIn">
+                              <div className="w-full h-2 bg-blue-100 rounded mb-2"></div>
+                              <div className="w-2/3 h-2 bg-gray-200 rounded mb-2"></div>
+                              <div className="w-5/6 h-2 bg-gray-200 rounded"></div>
+                              <div className="flex justify-end mt-2">
+                                <div className="h-3 w-3 rounded-full bg-red-400"></div>
+                              </div>
+                            </div>
+                            
+                            {/* Card 2 */}
+                            <div className="bg-white p-2 rounded shadow-sm border border-gray-200 animate-cardDragOut">
+                              <div className="w-full h-2 bg-blue-100 rounded mb-2"></div>
+                              <div className="w-4/6 h-2 bg-gray-200 rounded mb-2"></div>
+                              <div className="w-5/6 h-2 bg-gray-200 rounded"></div>
+                              <div className="flex justify-end mt-2">
+                                <div className="h-3 w-3 rounded-full bg-yellow-400"></div>
+                              </div>
+                            </div>
+                            
+                            {/* Card 3 */}
+                            <div className="bg-white p-2 rounded shadow-sm border border-gray-200">
+                              <div className="w-full h-2 bg-blue-100 rounded mb-2"></div>
+                              <div className="w-3/6 h-2 bg-gray-200 rounded mb-2"></div>
+                              <div className="w-4/6 h-2 bg-gray-200 rounded"></div>
+                              <div className="flex justify-end mt-2">
+                                <div className="h-3 w-3 rounded-full bg-green-400"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Column 2: In Progress */}
+                        <div className="flex-1 mx-1 bg-gray-50/80 rounded-md flex flex-col">
+                          <div className="p-2 text-center text-xs font-bold text-yellow-600 border-b border-gray-200">IN PROGRESS</div>
+                          <div className="flex-1 p-2 space-y-2 overflow-hidden relative">
+                            {/* Card 1 */}
+                            <div className="bg-white p-2 rounded shadow-sm border border-gray-200">
+                              <div className="w-full h-2 bg-yellow-100 rounded mb-2"></div>
+                              <div className="w-5/6 h-2 bg-gray-200 rounded mb-2"></div>
+                              <div className="w-4/6 h-2 bg-gray-200 rounded"></div>
+                              <div className="flex justify-end mt-2">
+                                <div className="h-3 w-3 rounded-full bg-yellow-400"></div>
+                              </div>
+                            </div>
+                            
+                            {/* Card 2 */}
+                            <div className="bg-white p-2 rounded shadow-sm border border-gray-200">
+                              <div className="w-full h-2 bg-yellow-100 rounded mb-2"></div>
+                              <div className="w-3/4 h-2 bg-gray-200 rounded mb-2"></div>
+                              <div className="w-1/2 h-2 bg-gray-200 rounded"></div>
+                              <div className="flex justify-end mt-2">
+                                <div className="h-3 w-3 rounded-full bg-blue-400"></div>
+                              </div>
+                            </div>
+                            
+                            {/* Dragging Card */}
+                            <div className="bg-white p-2 rounded shadow-md border border-gray-200 animate-cardDragIn absolute z-10 top-12 left-0 opacity-0">
+                              <div className="w-full h-2 bg-blue-100 rounded mb-2"></div>
+                              <div className="w-4/6 h-2 bg-gray-200 rounded mb-2"></div>
+                              <div className="w-5/6 h-2 bg-gray-200 rounded"></div>
+                              <div className="flex justify-end mt-2">
+                                <div className="h-3 w-3 rounded-full bg-yellow-400"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Column 3: Done */}
+                        <div className="flex-1 mx-1 bg-gray-50/80 rounded-md flex flex-col">
+                          <div className="p-2 text-center text-xs font-bold text-green-600 border-b border-gray-200">DONE</div>
+                          <div className="flex-1 p-2 space-y-2 overflow-hidden">
+                            {/* Card 1 */}
+                            <div className="bg-white p-2 rounded shadow-sm border border-gray-200">
+                              <div className="w-full h-2 bg-green-100 rounded mb-2"></div>
+                              <div className="w-4/6 h-2 bg-gray-200 rounded mb-2"></div>
+                              <div className="w-5/6 h-2 bg-gray-200 rounded"></div>
+                              <div className="flex justify-end mt-2">
+                                <div className="h-3 w-3 rounded-full bg-green-400"></div>
+                              </div>
+                            </div>
+                            
+                            {/* Card 2 */}
+                            <div className="bg-white p-2 rounded shadow-sm border border-gray-200 animate-complete">
+                              <div className="w-full h-2 bg-green-100 rounded mb-2"></div>
+                              <div className="w-3/4 h-2 bg-gray-200 rounded mb-2"></div>
+                              <div className="w-1/2 h-2 bg-gray-200 rounded"></div>
+                              <div className="flex justify-between mt-2">
+                                <div className="h-2 w-8 bg-green-200 rounded-full"></div>
+                                <div className="h-3 w-3 rounded-full bg-green-400"></div>
+                              </div>
+                            </div>
+
+                            {/* Card 3 - Empty space for animation */}
+                            <div className="h-[40px] animate-cardSpace"></div>
+                          </div>
+                        </div>
                       </div>
                       
-                      {/* Animated elements to simulate a GIF */}
-                      <div className="absolute top-1/4 left-1/4 w-16 h-16 bg-white shadow-md rounded-md animate-pulse"></div>
-                      <div className="absolute top-1/3 right-1/3 w-16 h-16 bg-white shadow-md rounded-md" 
-                        style={{animation: "float 3s infinite ease-in-out"}}></div>
-                      <div className="absolute bottom-1/4 right-1/4 w-16 h-16 bg-white shadow-md rounded-md animate-bounce"></div>
+                      {/* Mouse cursor animation */}
+                      <div className="absolute w-4 h-4 animate-cursor opacity-0">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 4L12 20L15 15L20 12L4 4Z" fill="#000" stroke="#fff" strokeWidth="1.5" />
+                        </svg>
+                      </div>
                       
-                      {/* Column layout sketch */}
-                      <div className="absolute inset-0 flex justify-between p-4 opacity-30">
-                        <div className="w-1/3 bg-blue-100 rounded-md"></div>
-                        <div className="w-1/3 mx-2 bg-orange-100 rounded-md"></div>
-                        <div className="w-1/3 bg-green-100 rounded-md"></div>
+                      {/* Animation overlay to indicate interactivity */}
+                      <div className="absolute bottom-2 right-2 flex items-center gap-1 bg-white/70 rounded-full px-2 py-1 text-xs text-gray-500 animate-pulse">
+                        <span>Drag & Drop</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5H6C4.89543 5 4 5.89543 4 7V19C4 20.1046 4.89543 21 6 21H18C19.1046 21 20 20.1046 20 19V7C20 5.89543 19.1046 5 18 5H16M12 12V3M12 3L9 6M12 3L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
                       </div>
                     </div>
                   </div>

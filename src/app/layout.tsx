@@ -1,9 +1,14 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "React Kanban Board with Drag & Drop | Simple & Lightweight",
@@ -54,10 +59,6 @@ export const metadata: Metadata = {
     description: "A lightweight, drag-and-drop Kanban board built with React. Simple installation, customizable cards, and responsive design for just $30, forever.",
     creator: "@yourhandle",
     images: ["https://your-domain.com/images/twitter-image.jpg"],
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
   },
   category: "Development Tools",
   other: {
